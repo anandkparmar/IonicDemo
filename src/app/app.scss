@@ -14,3 +14,45 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+// Text Sizes
+$novopay-text-10px: 10px;
+$novopay-text-12px: 12px;
+$novopay-text-14px: 14px;
+$novopay-text-16px: 16px;
+$novopay-text-20px: 20px;
+$novopay-text-24px: 24px;
+
+$novopay-text-heading: 		24px;
+$novopay-text-title: 		20px;
+$novopay-text-subheading: 	16px;
+$novopay-text-menu: 		14px;
+$novopay-text-button: 		14px;
+$novopay-text-caption: 		12px;
+$novopay-text-button: 		14px;
+
+// Text Colors
+$novopay-color-text-primary: 	#1C2C38;
+$novopay-color-text-secondary: 	#318F00;
+
+// Colors
+$novopay-color-primary: 		#0096C5;
+$novopay-color-accent: 			#FFD00D;
+$novopay-color-background: 		#EDEFF0;
+$novopay-color-fail-red: 		#E25E03;
+$novopay-color-warn-orange: 	#FFAD0D;
+$novopay-color-success-green: 	#318F00;
+$novopay-color-text-divider: 	#BDC1C3;
+
+.novopay-background {
+	background: $novopay-color-background;
+}
+
+.np-inline{
+	display: inline;
+}
+
+.button-inner-left{
+    justify-content: flex-start;
+}

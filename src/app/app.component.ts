@@ -14,15 +14,17 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{image: string, title: string, component: any, selected: boolean}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { image: 'home', title: 'Home', component: HomePage, selected: true},
+      { image: 'settings', title: 'Settings', component: ListPage, selected: false },
+      { image: 'help-circle', title: 'Help', component: ListPage, selected: false },
+      { image: 'exit', title: 'Logout', component: ListPage, selected: false }
     ];
 
   }
@@ -37,6 +39,13 @@ export class MyApp {
   }
 
   openPage(page) {
+    for (let pageItem of this.pages) {
+      if(pageItem == page){
+        pageItem.selected = true;
+      } else {
+        pageItem.selected = false;
+      }
+    }
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
