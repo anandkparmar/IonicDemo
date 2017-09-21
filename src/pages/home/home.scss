@@ -8,9 +8,14 @@ page-home {
   $novopay-color-warn-orange: 	#FFAD0D;
   $novopay-color-success-green: 	#318F00;
   $novopay-color-text-divider: 	#BDC1C3;
-  
-  ion-content{
+
+  .ion-content{
     background-color: $novopay-color-background;
     padding: 8px 8px 8px 8px;
+  }
+
+  .card-item {
+    justify-content: space-between;
+    display: flex;
   }
 }
