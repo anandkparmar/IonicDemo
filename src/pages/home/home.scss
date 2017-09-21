@@ -1,3 +1,16 @@
 page-home {
 
+  // Colors
+  $novopay-color-primary: 		#0096C5;
+  $novopay-color-accent: 			#FFD00D;
+  $novopay-color-background: 		#EDEFF0;
+  $novopay-color-fail-red: 		#E25E03;
+  $novopay-color-warn-orange: 	#FFAD0D;
+  $novopay-color-success-green: 	#318F00;
+  $novopay-color-text-divider: 	#BDC1C3;
+  
+  ion-content{
+    background-color: $novopay-color-background;
+    padding: 8px 8px 8px 8px;
+  }
 }

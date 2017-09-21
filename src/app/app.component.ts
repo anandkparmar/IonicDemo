@@ -1,10 +1,10 @@
-import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+import {Component, ViewChild} from '@angular/core';
+import {Nav, Platform} from 'ionic-angular';
+import {StatusBar} from '@ionic-native/status-bar';
+import {SplashScreen} from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import {HomePage} from '../pages/home/home';
+import {ListPage} from '../pages/list/list';
 
 @Component({
   templateUrl: 'app.html'
@@ -14,17 +14,17 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{image: string, title: string, component: any, selected: boolean}>;
+  pages: Array<{ image: string, title: string, component: any, selected: boolean }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { image: 'home', title: 'Home', component: HomePage, selected: true},
-      { image: 'settings', title: 'Settings', component: ListPage, selected: false },
-      { image: 'help-circle', title: 'Help', component: ListPage, selected: false },
-      { image: 'exit', title: 'Logout', component: ListPage, selected: false }
+      {image: 'home', title: 'Home', component: HomePage, selected: true},
+      {image: 'settings', title: 'Settings', component: ListPage, selected: false},
+      {image: 'help-circle', title: 'Help', component: ListPage, selected: false},
+      {image: 'exit', title: 'Logout', component: ListPage, selected: false}
     ];
 
   }
@@ -40,7 +40,7 @@ export class MyApp {
 
   openPage(page) {
     for (let pageItem of this.pages) {
-      if(pageItem == page){
+      if (pageItem == page) {
         pageItem.selected = true;
       } else {
         pageItem.selected = false;

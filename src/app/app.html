@@ -2,7 +2,7 @@
   <ion-header>
     <ion-toolbar color="primary">
       <div marging padding>
-          
+
       </div>
       <ion-title>John Smith</ion-title>
       <p ion-text padding-left color="light">john.smith@novopay.in</p>
@@ -12,11 +12,11 @@
   <ion-content class="novopay-background">
     <ion-list no-lines>
       <button class="novopay-background" padding-top padding-right
-              menuClose ion-item 
-              *ngFor="let p of pages" 
+              menuClose ion-item
+              *ngFor="let p of pages"
               (click)="openPage(p)">
-                <ion-icon name="{{p.image}}" color="primary"></ion-icon> 
-                <span margin-left style="color: #0096C5">{{p.title}}</span>
+        <ion-icon name="{{p.image}}" color="primary"></ion-icon>
+        <span margin-left style="color: #0096C5">{{p.title}}</span>
       </button>
     </ion-list>
   </ion-content>
