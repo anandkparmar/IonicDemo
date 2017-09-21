@@ -11,11 +11,20 @@ page-home {
 
   .ion-content{
     background-color: $novopay-color-background;
-    padding: 8px 8px 8px 8px;
   }
 
-  .card-item {
-    justify-content: space-between;
+  .container{
     display: flex;
   }
+
+  .ion-card-div{
+    width: 50%;
+    padding-right: 8px;
+  }
+
+  .ion-card{
+    width: 100%;
+  }
+
+
 }
