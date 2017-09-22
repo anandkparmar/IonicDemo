@@ -6,40 +6,84 @@
     <ion-title>Novopay</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content class="ion-content">
+<ion-content>
+  <ion-grid>
 
-  <div>
-    <ion-card>
-      <ion-card-content no-margin no-padding>
-        <button ion-item padding>
-          <ion-icon name="cart" item-start></ion-icon>
-          Pending Tasks
-        </button>
-      </ion-card-content>
-    </ion-card>
-  </div>
+    <ion-row>
 
-  <div class="container">
-    <div class="ion-card-div">
-      <ion-card class="ion-card">
-        <ion-card-content no-margin no-padding>
-          <button ion-item padding>
-            <ion-icon name="cart" item-start></ion-icon>
-            Pending Tasks
-          </button>
-        </ion-card-content>
-      </ion-card>
-    </div>
-    <div class="ion-card-div">
-      <ion-card class="ion-card">
-        <ion-card-content no-margin no-padding>
-          <button ion-item padding>
-            <ion-icon name="cart" item-start></ion-icon>
-            Pending Tasks
-          </button>
-        </ion-card-content>
-      </ion-card>
-    </div>
-  </div>
+      <ion-col>
+        <ion-card no-margin style="width: 100%">
+          <ion-card-content no-padding>
+            <ion-grid margin-top margin-bottom>
+              <ion-row justify-content-center>
+                <ion-col col-auto>
+                  <ion-icon name="cart" style="font-size: xx-large" margin-left margin-right></ion-icon>
+                </ion-col>
+                <ion-col style="font-size: medium" align-self-center>
+                  Pending Tasks
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
 
+    </ion-row>
+
+
+    <ion-row align-items-stretch>
+
+      <ion-col col-sm-6>
+        <ion-card no-margin style="width: 100%; height: 100%">
+          <ion-card-content no-padding>
+            <ion-grid margin-top margin-bottom>
+              <ion-row justify-content-center>
+                <ion-icon name="cart" style="font-size: xx-large"></ion-icon>
+              </ion-row>
+              <ion-row justify-content-center text-wrap style="font-size: medium" margin-top text-center>
+                Onboard Customer
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-sm-6>
+        <ion-card no-margin style="width: 100%; height: 100%">
+          <ion-card-content no-padding>
+            <ion-grid margin-top margin-bottom>
+              <ion-row justify-content-center>
+                <ion-icon name="cart" style="font-size: xx-large"></ion-icon>
+              </ion-row>
+              <ion-row justify-content-center text-wrap style="font-size: medium" margin-top text-center>
+                Loans
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+
+    <ion-row>
+
+      <ion-col col-6>
+        <ion-card no-margin style="width: 100%; height: 100%">
+          <ion-card-content no-padding>
+            <ion-grid margin-top margin-bottom>
+              <ion-row justify-content-center>
+                <ion-icon name="cart" style="font-size: xx-large"></ion-icon>
+              </ion-row>
+              <ion-row justify-content-center text-wrap style="font-size: medium" margin-top text-center>
+                Customer 360
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
 </ion-content>

@@ -9,22 +9,7 @@ page-home {
   $novopay-color-success-green: 	#318F00;
   $novopay-color-text-divider: 	#BDC1C3;
 
-  .ion-content{
-    background-color: $novopay-color-background;
+  ion-content{
+    //background-color: $novopay-color-background;
   }
-
-  .container{
-    display: flex;
-  }
-
-  .ion-card-div{
-    width: 50%;
-    padding-right: 8px;
-  }
-
-  .ion-card{
-    width: 100%;
-  }
-
-
 }
